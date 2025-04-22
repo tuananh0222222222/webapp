@@ -1,1 +1,78 @@
-co cl
+
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Đẹp với Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-table thead th {
+            background-color: #4e73df;
+            color: white;
+        }
+        .custom-table tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Danh Sách Nhân Viên</h2>
+
+        <div class="table-responsive shadow rounded">
+            <table class="table custom-table table-striped table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Họ và Tên</th>
+                        <th scope="col">Chức Vụ</th>
+                        <th scope="col">Phòng Ban</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Trạng Thái</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">NV001</th>
+                        <td>Nguyễn Văn An</td>
+                        <td>Trưởng Phòng</td>
+                        <td>Kế Toán</td>
+                        <td>an.nguyen@company.com</td>
+                        <td><span class="badge bg-success">Đang làm</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">NV002</th>
+                        <td>Trần Thị Bình</td>
+                        <td>Nhân Viên</td>
+                        <td>Nhân Sự</td>
+                        <td>binh.tran@company.com</td>
+                        <td><span class="badge bg-success">Đang làm</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">NV003</th>
+                        <td>Lê Văn Cường</td>
+                        <td>Phó Phòng</td>
+                        <td>Kỹ Thuật</td>
+                        <td>cuong.le@company.com</td>
+                        <td><span class="badge bg-warning text-dark">Nghỉ phép</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">NV004</th>
+                        <td>Phạm Thị Dung</td>
+                        <td>Nhân Viên</td>
+                        <td>Marketing</td>
+                        <td>dung.pham@company.com</td>
+                        <td><span class="badge bg-danger">Đã nghỉ</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
